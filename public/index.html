@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a><a href="#about">About</a><a href="#identity">Identity</a>
+        </nav>
+    </header>
+    <main>
+        <div class="jumbotron" id="home">
+            <div class="text">
+                <h1>Abdillah Zikri Alhusni</h1>
+                <p>A Front End Developer</p>
+                <a href="#identity"><span class="btn">Look at Me</span></a>
+            </div>
+            <!-- <img src="/WhatsApp Image 2023-02-28 at 07.48.15.jpeg" alt=""> -->
+        </div>
+        <div class="content">
+            <article class="intro">
+                <h1 id="about">About Me</h1>
+                <p>
+                    Nama saya Abdillah Zikri Alhusni. <br>
+                    Saya adalah salah satu peserta program Bangkit 2023. <br>
+                    Saya mengikuti kelas cloud computing pada program Bangkit kali ini. <br>
+                    Pada dasarnya saya adalah seorang front end developer. <br>
+                    Saya mengikuti kelas ini untuk menjadi seorang Full Stack Developer. <br>
+                </p>
+            </article>
+            <aside>
+                <h1 id="identity">My Identity</h1>
+                <img src="https://storage.googleapis.com/dicodingabdillah/WhatsApp%20Image%202023-02-28%20at%2007.48.15.jpeg" alt="">
+                <h3>Abdillah Zikri Alhusni</h3>
+                <span  onclick="clickSatu()">Kapan dan dimana saya lahir <span>></span></span>
+                <p id="satu">
+                    Saya lahir pada tanggal 10 november 2002 di Kabupaten Batu Bara
+                </p>
+                <span onclick="clickDua()">Dimana saya tinggal <span>></span></span>
+                <p id="dua">
+                    Saya tinggal di Desa Pematang cengkering, Kabupaten Batu Bara Sumatera Utara
+                </p>
+                <span onclick="clickTiga()">Apa nama kampus saya <span>></span></span>
+                <p id="tiga">
+                    Saya menempuh perkuliahan di Universitas Mikroskil
+                </p>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>Made with love by Abdillah Zikri Alhusni</p>
+    </footer>
+        
+    <script>
+        let satu = document.getElementById('satu')
+        function clickSatu(){
+            satu.classList.toggle('display')
+        }
+        let dua = document.getElementById('dua')
+        function clickDua(){
+            dua.classList.toggle('display')
+        }
+        let tiga = document.getElementById('tiga')
+        function clickTiga(){
+            tiga.classList.toggle('display')
+        }
+    </script>
+</body>
+</html>

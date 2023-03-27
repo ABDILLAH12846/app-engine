@@ -5,6 +5,9 @@
 import { nanoid } from 'nanoid';
 import { books } from './books.js';
 
+const front = (request, h) => h.file('public/index.html');
+const css = (request, h) => h.file('public/style.css');
+
 const addBook = (request, h) => {
   const {
     name, year, author, summary, publisher, pageCount, readPage, reading,
@@ -221,5 +224,5 @@ const deleteBookById = (request, h) => {
   return response;
 };
 export {
-  addBook, getAllBooks, getBookById, editBookById, deleteBookById,
+  addBook, getAllBooks, getBookById, editBookById, deleteBookById, front, css,
 };

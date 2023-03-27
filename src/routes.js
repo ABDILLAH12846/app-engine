@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import {
-  addBook, deleteBookById, editBookById, getAllBooks, getBookById,
+  addBook, css, deleteBookById, editBookById, front, getAllBooks, getBookById,
 } from './handler.js';
 
 const routes = [
@@ -8,6 +8,16 @@ const routes = [
     method: 'POST',
     path: '/books',
     handler: addBook,
+  },
+  {
+    method: 'GET',
+    path: '/',
+    handler: front,
+  },
+  {
+    method: 'GET',
+    path: '/css',
+    handler: css,
   },
   {
     method: 'GET',
